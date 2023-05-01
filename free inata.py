@@ -11,6 +11,8 @@ except ImportError:
     os.system('pip install user_agent')
     
     os.system("clear")
+idd = int(input('        - EnteR ID : '))
+token = input('        - Enter TokeN : ')
 uid = uuid4()
 dergham = str(uuid4())
 ll = 0
@@ -225,6 +227,7 @@ NeW GmaiL AccunT
 ♕DERGHAM♕
 DeV == [' @d_xiim ']
 '''
+                    ooll = requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={idd}&text={info} ")
                 elif ('"EemailInvalid') in r4:
                     kk +=1
                     os.system("clear")
